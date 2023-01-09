@@ -26,11 +26,11 @@ def main():
         elif command.startswith('select'):
             parts = command.split(' ', maxsplit=1)
             period = parts[1]
-            select = select_man(people, period)
+            select = select_man.select_man(people, period)
             display_man.display_man(select)
 
         elif command == 'help':
-           display_man.help_man()
+           help.help_man()
 
         else:
             print(f"Неизвестная команда {command}", file=sys.stderr)
