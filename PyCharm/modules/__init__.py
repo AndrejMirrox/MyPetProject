@@ -1,1 +1,0 @@
-__all__ = ['help', 'display_man', 'select_man', 'list_man', 'add_man', 'prog']
